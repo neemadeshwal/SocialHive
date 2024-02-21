@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad&family=Caveat:wght@700&family=Covered+By+Your+Grace&family=Grape+Nuts&family=Poppins:wght@300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .dark {
+    @apply bg-gray-800 text-gray-300 h-[100vh] flex items-center justify-center;
+  }
+  .form {
+    @apply bg-gray-700  rounded-lg p-10 w-[30vw];
+  }
+  input {
+    @apply bg-gray-800 text-gray-300 rounded px-4 py-3 tracking-wider placeholder:text-gray-500;
+  }
+  .btn {
+    @apply px-4 py-2 rounded-lg bg-teal-500 hover:bg-teal-600 transition ease-in-out duration-500 cursor-pointer tracking-wider font-medium text-white mt-8 w-full;
+  }
+}
+
+.logo {
+  font-family: "Grape Nuts", cursive;
+}
+
+/* @layer components {
+  .icon {
+    @apply text-default-text text-xl;
+  }
+  .btn {
+    @apply hover:no-underline bg-blue-accent hover:bg-blue-accent-hover tracking-wider w-full text-center text-nav font-bold cursor-pointer uppercase px-4 py-2 rounded-md transition-colors block;
+  }
+} */
